@@ -39,6 +39,12 @@ collections:
   authors:
     output: true
 
+sass:
+  sass_dir: _sass
+
+sass:
+  style: compressed
+
 
 kramdown:
   syntax_highlighter: coderay
