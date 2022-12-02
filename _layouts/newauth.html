@@ -16,7 +16,7 @@
             {% for ablog in site.posts %}
                 {% if ablog.author == page.name %}
                 {{ablog.date | date_to_string }}<br>
-                <h2><a href="{{ablog.url | absolute_url}}" style="text-decoration: none;">{{ablog.title}}</a></h2><hr>
+                <h2><a href="{{ablog.url}}" style="text-decoration: none;">{{ablog.title}}</a></h2><hr>
                 {% endif %}
             {% endfor %}
         </div>
