@@ -26,7 +26,7 @@ description: >-
   Google search results) and in your feed.xml site description.
 baseurl: "/SampleBlogSite/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-repo: "https://harsh07ch.github.io/SampleBlogSite/"
+repo: "https://github.com/harsh07ch/SampleBlogSite"
 twitter_username: jekyllrb
 github_username:  jekyll
 
