@@ -11,7 +11,7 @@
 <body>
     {% include navbar.html %}
         <h1 class="text-center my-3 text-capitalize" style="font-weight: bolder; letter-spacing:2px"> {{page.name}} </h1><hr>
-        <div class="container text-wrap" style="padding: 10px 150px 10px 150px">
+        <div class="container text-wrap">
             <h4>Occupation : {{page.position}}</h4><br>
             {{content}}<hr>
             {% for ablog in site.posts %}
