@@ -61,6 +61,16 @@
     background-color: #0d6efd;
 }
 
+.resabout {
+    margin: 10px 80px;
+    padding: 10px 80px;
+}
+
+.resblog {
+    margin: 10px 80px;
+    padding: 10px 80px;
+}
+
 @media only screen and (max-width: 630px) {
     .newnav {
         width: 100%;
@@ -74,5 +84,13 @@
     .rightnav {
         width: 100%;
         text-align: center;
+    }
+    .resabout {
+        margin: 10px 30px;
+        padding: 10px 30px;
+    }
+    .resblog {
+        margin: 10px 30px;
+        padding: 10px 30px;
     }
 }
