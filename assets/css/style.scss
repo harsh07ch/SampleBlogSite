@@ -1,11 +1,17 @@
 ---
 ---
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .newhover{
+    color: white;
+    text-decoration: none;
     font-weight: 600;
-    padding: 16px 16px;
+    padding: 10px 30px;
 }
 
 .newhover:hover {
-    background-color: rgb(69, 69, 69);
+    background-color: rgb(57, 57, 57);
+    color:coral;
 }
