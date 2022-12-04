@@ -1,0 +1,24 @@
+---
+layout: "newsearch"
+---
+<link href="../assets/css/style.css" rel="stylesheet">
+<!-- Html Elements for Search -->
+<div id="search-container" class="searchbar">
+  <h1 style="font-weight: bolder; font-size:50px; margin-bottom: 30px;">Search Here</h1>
+<input type="text" class="sbar" id="search-input" placeholder="search...">
+<ul id="results-container" class="reslist">
+  <!-- Result -->
+</ul>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script src="../assets/scripts/search-script.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: "../assets/search.json"
+})
+</script>

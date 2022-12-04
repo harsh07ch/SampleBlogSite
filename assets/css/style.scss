@@ -30,7 +30,7 @@ body {
 }
 
 .navlist {
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -40,11 +40,11 @@ body {
     padding: 12px 0px 2px 0px;
 }
 
-.rightnav {
-    width: 50%;
-    text-align: right;
-    padding: 10px 12px 2px 0px;
-}
+// .rightnav {
+//     width: 50%;
+//     text-align: right;
+//     padding: 10px 12px 2px 0px;
+// }
 
 #search {
     border: 2px solid white;
@@ -76,9 +76,34 @@ body {
     padding: 10px 80px;
 }
 
+.searchbar {
+    margin: 60px;
+    font-size: larger;
+    text-align: center;
+}
+
+.sbar {
+    width: 600px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.reslist {
+    list-style: none;
+    margin: 20px;
+}
+
+.reslist li {
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
 @media only screen and (max-width: 670px) {
     .newnav {
-        width: 100%;
+        width: 100vw;
         flex-direction: column;
     }
     .navlist {
@@ -86,10 +111,10 @@ body {
         text-align: center;
         flex-direction: column;
     }
-    .rightnav {
-        width: 100%;
-        text-align: center;
-    }
+    // .rightnav {
+    //     width: 100%;
+    //     text-align: center;
+    // }
     .resabout {
         margin: 10px 30px;
         padding: 10px 30px;
@@ -97,5 +122,11 @@ body {
     .resblog {
         margin: 10px 30px;
         padding: 10px 30px;
+    }
+    .sbar {
+        width: 80%;
+        height: 45px;
+        padding: 10px;
+        border-radius: 12px;
     }
 }
