@@ -9,17 +9,32 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
 <body>
-        <nav class="newnav">
+        <!-- <nav class="newnav">
             <ul class="navlist">
                 <li><a href="/sampleblogsite/" class="newhover">Home</a></li>
                 <li><a href="/sampleblogsite/pages/author" class="newhover">Authors</a></li>
                 <li><a href="/sampleblogsite/pages/search" class="newhover">Search</a></li>
                 <li><a href="/sampleblogsite/about" class="newhover">About</a></li>
             </ul>
-            <!-- <div class="rightnav">
+            <div class="rightnav">
                 <input type="text" placeholder="Search" name="search" id="search">
                 <button class="sbtn">Search</button>
-            </div> -->
+            </div>
+        </nav> -->
+
+        <nav class="newnav">
+            <ul class="navlist" style="padding:0px">
+                {% for item in site.navigation_header %}
+                    {% if item.url contains '://' %}
+                        {% assign url = item.url %}
+                    {% else %}
+                        {% assign url = item.url | relative_url %}
+                    {% endif %}
+                    <li class="{% if item.url == page.url %}current{% endif %}">
+                        <a href="{{ url }}" class="newhover {% if item.url == page.url %}currhover{% endif %}">{{ item.title }}</a>
+                    </li>
+                    {% endfor %}
+            </ul>
         </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

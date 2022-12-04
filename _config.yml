@@ -38,12 +38,12 @@ plugins:
 navigation_header:
 - title: Home
   url: /
+- title: Authors
+  url: /pages/author/
+- title: Search
+  url: /pages/search/
 - title: About
   url: /about/
-- title: Authors
-  url: /author/
-- title: Search
-  url: /search/
 
 collections:
   authors:

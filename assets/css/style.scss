@@ -15,7 +15,7 @@ body {
     text-decoration: none;
     font-size: large;
     font-weight: 600;
-    padding: 14px 20px 18px 20px;
+    padding: 14px 20px 12px 20px;
 }
 
 .newhover:hover {
@@ -23,6 +23,23 @@ body {
     color:coral;
 }
 
+.currhover {
+    color:black;
+}
+.currhover:hover {
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.current {
+    background-color:white;
+    margin-bottom:0px;
+    // border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 10px;
+}
 
 .newnav {
     display: flex;
@@ -33,11 +50,12 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .navlist li {
     list-style: none;
-    padding: 12px 0px 2px 0px;
+    padding: 12px 0px 10px 0px;
 }
 
 // .rightnav {
@@ -101,6 +119,15 @@ body {
     padding: 20px 40px;
 }
 
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+.acard {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
 @media only screen and (max-width: 670px) {
     .newnav {
         width: 100vw;
@@ -121,12 +148,20 @@ body {
     }
     .resblog {
         margin: 10px 30px;
-        padding: 10px 30px;
+        padding: 10px 0px;
     }
     .sbar {
-        width: 80%;
+        margin-top: 20px;
+        width: 60%;
         height: 45px;
         padding: 10px;
         border-radius: 12px;
+    }
+    .searchbar {
+        margin: 0px;
+    }
+    .acard {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
