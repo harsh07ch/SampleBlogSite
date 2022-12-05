@@ -129,6 +129,16 @@ ul {
     padding-right: 3rem;
 }
 
+footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    width: 100%;
+    height: 60px;
+    padding: 16px 0px 0px 80px;
+}
+
 @media only screen and (max-width: 670px) {
     .newnav {
         width: 100vw;
@@ -164,5 +174,8 @@ ul {
     .acard {
         padding-left: 0px;
         padding-right: 0px;
+    }
+    footer {
+        padding: 16px 0px 0px 10px;
     }
 }

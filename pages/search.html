@@ -2,25 +2,21 @@
 layout: "newsearch"
 permalink: /pages/search/
 ---
+
 <link href="../../assets/css/style.css" rel="stylesheet">
-<!-- Html Elements for Search -->
 <div id="search-container" class="searchbar">
-  <h1 style="font-weight: bolder; font-size:50px; margin-bottom: 20px;">Search Here</h1>
-<input type="text" class="sbar" id="search-input" placeholder="search...">
-<ul id="results-container" class="reslist">
-  <!-- Result -->
-</ul>
+    <h1 style="font-weight: bolder; font-size:50px; margin-bottom: 20px;">Search Here</h1>
+    <input type="text" class="sbar" id="search-input" placeholder="search...">
+    <ul id="results-container" class="reslist">
+        <!--Results-->
+    </ul>
 </div>
 
-<!-- Script pointing to search-script.js -->
-<!-- <script src="scripts/search-script.js" type="text/javascript"></script> -->
 <script src="../../assets/scripts/search-script.js" type="text/javascript"></script>
-
-<!-- Configuration -->
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: "../../assets/search.json"
-})
+    SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: "../../assets/search.json"
+    })
 </script>
